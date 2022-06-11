@@ -37,6 +37,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@0b651ed7546ecfc75024011f76944cb9b381ef1e
         with:
-          app-name: ebizproj9-backend
+          app-name: ebizproj9-frontend
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: ${{ secrets.DOCKER_HUB_USERNAME }}/ebizproj9-frontend
