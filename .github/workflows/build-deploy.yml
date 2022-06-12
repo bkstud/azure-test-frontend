@@ -31,6 +31,8 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: build
+    environment:
+      REACT_APP_BACKEND_URL: 'https://ebizproj9-backend.azurewebsites.net'
 
     steps:
       - name: Deploy to Azure Web App
